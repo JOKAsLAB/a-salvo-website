@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Salvamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .field {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            width: 150px; /* Garante que os labels fiquem alinhados */
+        }
+        input, select, textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .radio-option input {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Salvamento</h1>
+
+        <div class="section">
+            <h2>Dados da Ocorrência</h2>
+            <div class="field">
+                <label>Local da Ocorrência:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Cidade/Concelho:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Data:</label>
+                <input type="date">
+                <label>Hora:</label>
+                <input type="time">
+            </div>
+            <div class="field">
+                <label>Nadador-Salvador:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="nadador_servico" value="em_servico">
+                        <span>Em Serviço</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="nadador_servico" value="fora_servico">
+                        <span>Fora de Serviço</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Identificação Nadador-Salvador</h2>
+            <div class="field">
+                <label>Nome:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Nacionalidade:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="sexo" value="feminino">
+                        <span>Feminino</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="sexo" value="masculino">
+                        <span>Masculino</span>
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <label>Morada:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Idade:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Nº Telemóvel:</label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Nº Nadador-Salvador:</label>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
