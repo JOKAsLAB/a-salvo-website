@@ -33,7 +33,7 @@
         }
         label {
             font-weight: bold;
-            width: 150px; /* Garante que os labels fiquem alinhados */
+            width: 150px;
         }
         input, select, textarea {
             flex: 1;
@@ -55,12 +55,14 @@
             transform: scale(1.2);
             cursor: pointer;
         }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Relatório de Salvamento</h1>
 
+        <br>
         <div class="section">
             <h2>Dados da Ocorrência</h2>
             <div class="field">
@@ -92,6 +94,7 @@
             </div>
         </div>
 
+        <br>
         <div class="section">
             <h2>Identificação Nadador-Salvador</h2>
             <div class="field">
@@ -130,6 +133,12 @@
             <div class="field">
                 <label>Nº Nadador-Salvador:</label>
                 <input type="text">
+            </div>
+            
+            <div class="field">
+                <label>Assinatura do Nadador-Salvador:</label>
+                <label>______________________________</label>
+                <div class="signature-line"></div>
             </div>
         </div>
     </div>
